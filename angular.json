@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "angularTimer"
+  "defaultProject": "angularTimer",
+  "cli": {
+    "analytics": "b905fed9-c9b6-4653-bd9e-e699496ca8cc"
+  }
 }
