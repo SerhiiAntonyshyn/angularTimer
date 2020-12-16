@@ -1,0 +1,8 @@
+<div class="time-container">
+  <span class=time>{{timeForDisplay.h}}:{{timeForDisplay.m}}:{{timeForDisplay.s}}</span>
+<div class="control-panel">
+  <button class="button" (click)="runStopwatch()" [class.green]="!isStarted" [class.stop-button]="isStarted">{{startButton}}</button>
+  <button class="button" (click)="pauseStopwatch($event)" [disabled]="!isStarted">Wait</button>
+  <button class="button" (click)="resetStopwatch()" class="reset-button" [disabled]="!isStarted">Reset</button>
+</div>
+</div>
