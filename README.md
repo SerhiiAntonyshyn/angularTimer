@@ -1,27 +1,21 @@
-# AngularTimer
+Реализовать секундомер, который подсчитывает время в формате «HH: MM: SS»
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.4.
+Таймер должен иметь следующие кнопки:
 
-## Development server
+* «Start / Stop» - запуск / остановка отсчета времени, останавливает и обнуляет значение таймера.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+* «Wait» - работает на двойной клик (время между нажатиями не более 300 мс!) таймер должен прекратить отсчет времени; если после него нажать старт, то возобновляется отсчет.
 
-## Code scaffolding
+* «Reset» - сброс таймера на 0.  Обнуляет таймер и снова начинает отсчет.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Требования:
 
-## Build
+ - используйте Observables в коде
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+ - обязательно RxJS подход
 
-## Running unit tests
+ - функциональный подход
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+ - нам важнее всего увидеть Ваше умение писать код
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- 300млс – это не DoubleClick
